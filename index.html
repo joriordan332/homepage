@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="headerImage">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/newYork-mobile.jpg"/>
+                    <source media="(max-width: 1199px)" srcset="images/newYork-tablet.jpg"/>
+                    <source media="(min-width: 1200px)" srcset="images/newYork.jpg">
+                    
+                    <img src="images/newYork.jpg" alt="Jonathan in Dumbo New York with Manhattan Bridge in the background" />
+                </picture>
+                <div class="overlayText">Jonathan O'Riordan</div>
+            </div>
+            <div class="headerText">
+                <h1>About me</h1>
+                <p>Hello, I'm Jonathan O'Riordan an aspiring Front End Developer. I discovered my for passion for Web Development after starting an online course and have immersed myself into it ever since. I'm looking for my first full time role to bring that passion to the industry.
+
+                Skills-HTML, CSS, JavaScript & React
+                </p>
+                <div class="logos">
+                    <img class="linkedIn" src="images/linkedin.svg" alt="linkedIn">
+                    <img class="gitHub" src="images/github.svg" alt="gitHub">
+                </div>
+            </div>
+        </header>
+            <section>
+                <h2>My work</h2>
+                <div>
+                    <img src="images/battleship.png" alt="">
+                    <h3>Battleship</h3>
+                    <img src="images/github.svg" alt="gitHub">
+                    <p>Battleship game which made use of test driven development. User is able to drag and drop their ships onto a board then play a game against the computer.</p>
+                </div>
+                <div>
+                    <img src="images/etchasketch.png" alt="">
+                    <h3>Etch A Sketch</h3>
+                    <img src="images/github.svg" alt="gitHub">
+                    <p>Etch-A-Sketch game which involved use of DOM manipulation. User can 
+                        <li>Select black or rainbow which colours each cell a random colour when the mouse passes over</li>
+                        <li>Erase or clear the grid</li>
+                        <li> Apply shading / lightening that persists over background colour changes</li>
+                        <li>Create a grid size up to 100 x 100</li> 
+                    </p>
+                </div>
+                <div>
+                    <img src="images/library.png" alt="">
+                    <h3>Library</h3>
+                    <img src="images/github.svg" alt="gitHub">
+                    <p>Virtual library to put into practice what I've learned about objects and object constructors. It also drew on previous lessons about DOM manipulation, forms and tables.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/tictactoe.png" alt="">
+                    <h3>Tic Tac Toe</h3>
+                    <img src="images/github.svg" alt="gitHub">
+                    <p>Tic Tac Toe board that pulls together previous lessons in using objects, modules and factory functions.</p>
+                </div>
+                <div>
+                    <img src="images/todoList.png" alt="">
+                    <h3>ToDo List</h3>
+                    <img src="images/github.svg" alt="gitHub">
+                    <p>A simple to-do list which allows user to add projects, tasks, select their priority, date they need to be done by as well as if they are complete. User can also filter tasks by all, day or week. This project implemented localStorage, modules and classes.
+                    </p>
+                </div>
+                <div>
+                    <img src="images/weather.png" alt="">
+                    <h3>Weather App</h3>
+                    <img src="images/github.svg" alt="gitHub">
+                    <p>Weather app that shows the current weather forecast of the location of the users choosing and shows numerous features about the weather such as humidity and chances of rain etc. Project achieved through use of asynchronous code and APIs.</p>
+                </div>
+            </section>
+    </main>
+</body>
+</html>

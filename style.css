@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    margin: 60px;
+}
+
+
+
+@media (max-width: 500px){
+    body {
+        margin: 8px;
+        flex-direction: column;
+    }
+}
+
+
+.headerImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+.overlayText {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: #fff; 
+  font-size: 80px; 
+}
+
+.logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.linkedIn {
+    grid-column: 1 / 2;
+}
+
+.gitHub {
+    grid-column: 2 / 3;
+}
