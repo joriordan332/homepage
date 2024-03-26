@@ -1,34 +1,29 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'roboto-medium';
+    src: url('fonts/Roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'roboto-light';
+    src: url('fonts/Roboto/Roboto-Light.ttf');
+}
+
 body {
+    font-family: roboto-light;
+    font-size: calc(15px + 0.390625vw);
     display: flex;
     margin: 60px;
-}
-
-
-
-@media (max-width: 500px){
-    body {
-        margin: 8px;
-        flex-direction: column;
-    }
-}
-
-
-.headerImage {
-    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-
-
-
-.overlayText {
-  position: absolute;
-  bottom: 10px;
-  left: 15px;
-  color: #fff; 
-  font-size: 80px; 
+    min-height: 100vh;
+    background: 
+  -webkit-linear-gradient(rgb(255,228,225), rgba(135, 60, 255, 0.0) 0%),
+ -webkit-linear-gradient(-75deg, rgba(72,209,204, 0.9) 45%, rgb(255,250,250) 0%);
 }
 
 .logos {
@@ -38,8 +33,448 @@ body {
 
 .linkedIn {
     grid-column: 1 / 2;
+    width: 50px;
+    height: 50px;
 }
 
 .gitHub {
     grid-column: 2 / 3;
+    width: 50px;
+    height: 50px;
 }
+
+.containers {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 20% 80%;
+}
+
+.projectName {
+    grid-template-rows: 1 / 2;
+    grid-template-columns: 1 / 2;
+    display: flex;
+    align-items: center;
+}
+
+.githubContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.phone, .email {
+    width: 50px;
+    height: 50px;
+}
+
+.phoneContainer, .emailContainer {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.phone, .email {
+    grid-column: 1 / 2;
+}
+
+.number, .emailAddress {
+    grid-column: 2 / 3;
+}
+
+.phoneLogo, .emailLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlayText, h1, h2, h3 {
+    font-family: roboto;
+}
+
+@media screen and (max-width: 500px){
+    body {
+        display: flex;
+        margin: 8px;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 0.8rem;  
+    }
+
+    .wedding {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    h1, .work {
+        text-align: center;
+    }
+
+    .headerImage {
+        grid-row: 1 / 2;
+    }
+
+    .overlayText {
+        position: absolute;
+        bottom: 20%;
+        left: 33%;
+        color: #ffffff; 
+        font-size: 5vmin; 
+        overflow: none;
+      }
+
+    .headerText {
+        color: black;
+        grid-row: 2 / 3;
+        margin: 0 auto;
+        padding:  32px;
+        max-width: 300px;
+    }
+
+    .linkedInLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gitHubLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectContainer {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+    }
+
+    .projectScreenshot {
+        height: 250px;
+        width: 357px;
+    }
+
+    .containers {
+        padding: 10px;
+    }
+
+    .gitHub-project {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .description {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+
+    .phone, .email {
+        width: 25px;
+        height: 25px;
+    }
+
+    .projects {
+        border: 1px solid rgb(103, 105, 105);
+        box-shadow: 10px 5px 5px rgb(103, 105, 105);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 501px) {
+    body {
+        display: flex;
+        margin: 8px;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 0.8rem;  
+    }
+
+    .wedding {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        display: grid;
+        grid-template-rows: 60% 40%;
+    }
+
+    h1, .work {
+        text-align: center;
+    }
+
+    .headerImage {
+        grid-row: 1 / 2;
+        overflow: none;
+    }
+
+    .overlayText {
+        position: absolute;
+        bottom: 20%;
+        left: 32%;
+        color: #ffffff; 
+        font-size: 5vmin; 
+        overflow: none;
+      }
+
+    .headerText {
+        color: black;
+        grid-row: 2 / 3;
+        margin: 0 auto;
+        padding:  32px;
+        max-width: 300px;
+    }
+
+    .linkedInLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gitHubLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectContainer {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
+    }
+
+    .projectScreenshot {
+        height: 250px;
+        width: 360px;
+    }
+
+    .containers {
+        padding: 10px;
+    }
+
+    .projectImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gitHub-project {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .description {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+
+    .phone, .email {
+        width: 25px;
+        height: 25px;
+    }
+
+    .contactHeading {
+        text-align: center;
+    }
+
+    .projects {
+        border: 1px solid rgb(103, 105, 105);
+        box-shadow: 10px 5px 5px rgb(103, 105, 105);
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+    body {
+        display: flex;
+        margin: 8px;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 0.8rem;  
+    }
+
+    .wedding {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    h1, .work {
+        text-align: center;
+    }
+
+    header {
+        grid-row: 0% 0%;
+    }
+
+    .headerImage {
+        grid-row: 1 / 2;
+        overflow: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .overlayText {
+        position: absolute;
+        left: 40%;
+        color: #ffffff; 
+        font-size: 4vmin; 
+        overflow: none;
+        text-align: center;
+      }
+
+    .headerText {
+        color: black;
+        grid-row: 2 / 3;
+        margin: 0 auto;
+        padding:  32px;
+        max-width: 500px;
+    }
+
+    .linkedInLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gitHubLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projectContainer {
+        display: grid;
+        grid-gap: 100px;
+        grid-template-columns: repeat(auto-fill, minmax(410px, 1fr) );
+        
+    }
+
+    .projects {
+        border: 1px solid rgb(103, 105, 105);
+        box-shadow: 10px 5px 5px rgb(103, 105, 105);
+    }
+
+    .projectScreenshot {
+        height: 250px;
+        width: 360px;
+    }
+
+    .containers {
+        padding: 10px;
+    }
+
+    .projectImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gitHub-project {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .description {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+
+    .phone, .email {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .contactHeading {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .contactContainer {
+        display: grid;
+        grid-template-columns: 40% 80%;
+        max-width: 800px;
+        padding-left: 625px;
+    }
+
+    .details {
+        grid-column: 1 / 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;   
+    }
+
+    .wedding {
+        grid-column: 2 / 3;
+    }
+
+
+    }
